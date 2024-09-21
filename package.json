@@ -185,10 +185,22 @@
     "yorkie": "^2.0.0"
   },
   "peerDependencies": {
-    "jiti": "*"
+    "jiti": "*",
+    "@types/estree": "1.x.x",
+    "@eslint/core": "0.x.x",
+    "@types/json-schema": "7.x.x"
   },
   "peerDependenciesMeta": {
     "jiti": {
+      "optional": true
+    },
+    "@types/estree": {
+      "optional": true
+    },
+    "@eslint/core": {
+      "optional": true
+    },
+    "@types/json-schema": {
       "optional": true
     }
   },

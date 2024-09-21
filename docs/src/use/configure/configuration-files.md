@@ -511,14 +511,14 @@ You need to enable this feature through the `unstable_ts_config` feature flag:
 npx eslint --flag unstable_ts_config
 ```
 
-For Deno and Bun, TypeScript configuration files are natively supported; for Node.js, you must install the optional dev dependency [`jiti`](https://github.com/unjs/jiti) in your project (this dependency is not automatically installed by ESLint):
+For Deno and Bun, TypeScript configuration files are natively supported; for Node.js, you must install the following optional dev dependencies in your project (these dependencies are not automatically installed by ESLint):
 
 ```bash
-npm install -D jiti
+npm install -D jiti @types/estree @eslint/core @types/json-schema
 # or
-yarn add --dev jiti
+yarn add --dev jiti @types/estree @eslint/core @types/json-schema
 # or
-pnpm add -D jiti
+pnpm add -D jiti @types/estree @eslint/core @types/json-schema
 ```
 
 You can then create a configuration file with a `.ts`, `.mts`, or `.cts` extension, and export an array of [configuration objects](#configuration-objects). Here's an example in ESM format:
