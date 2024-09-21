@@ -36,7 +36,6 @@
                 "@eslint/core",
                 "@types/estree",
                 "@types/json-schema"
-
             ]
         },
         "docs": {
