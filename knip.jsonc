@@ -2,7 +2,7 @@
     "workspaces": {
         ".": {
             // These entries are complementary to the ones found in package.json
-            "entry": ["lib/rules/index.js", "tools/internal-rules/*.js"],
+            "entry": ["lib/rules/index.js", "tools/internal-rules/*.js", "lib/types/*.d.ts"],
             "project": ["{conf,lib,tools}/**/*.js"],
             "mocha": {
                 "entry": [
@@ -31,7 +31,12 @@
                 "eslint-config-eslint",
 
                 // Optional peer dependency used for loading TypeScript configuration files
-                "jiti"
+                "jiti",
+                // Optional peer dependencies used inside types
+                "@eslint/core",
+                "@types/estree",
+                "@types/json-schema"
+
             ]
         },
         "docs": {
